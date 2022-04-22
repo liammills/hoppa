@@ -16,6 +16,7 @@ module.exports = {
     'vue/no-deprecated-slot-attribute': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'vue/valid-v-for': 'off',
   },
   overrides: [
     {
