@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Home</ion-title>
+        <h1>Home</h1>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -18,6 +18,14 @@
       <PostCard name="hi" />
 
       <ExploreContainer name="Home page" />
+
+      <h6>PLEASE work</h6>
+
+      <p>This WILL work</p>
+
+      <a>Read more</a>
+
+      <h2>This looks different</h2>
     </ion-content>
   </ion-page>
 </template>
@@ -25,7 +33,7 @@
 <script>
 import { defineComponent } from 'vue';
 import {
-  IonPage, IonHeader, IonToolbar, IonTitle, IonContent,
+  IonPage, IonHeader, IonToolbar, IonContent,
 } from '@ionic/vue';
 import EmissionsSummary from '@/components/EmissionsSummary.vue';
 import PostCard from '@/components/PostCard.vue';
@@ -33,7 +41,7 @@ import PostCard from '@/components/PostCard.vue';
 export default defineComponent({
   name: 'HomePage',
   components: {
-    IonHeader, IonToolbar, IonTitle, IonContent, IonPage, PostCard, EmissionsSummary,
+    IonHeader, IonToolbar, IonContent, IonPage, PostCard, EmissionsSummary,
   },
   data() {
     return {

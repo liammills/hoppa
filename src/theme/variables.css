@@ -10,7 +10,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-off-white: #FFF9F2;
   --ion-color-black: #1A1A1A;
   --ion-color-pink: #DF4197;
-  --ion-color-green: #005C5B;
+  --ion-color-purple: #818AD8;
   --ion-color-yellow: #FDD53A;
   --ion-color-lime: #A3CA39;
   --ion-color-orange: #F15523;
@@ -62,6 +62,9 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /* Montserrat global font */
+  --ion-font-family: 'Montserrat';
 }
 
 /* @media (prefers-color-scheme: dark) {

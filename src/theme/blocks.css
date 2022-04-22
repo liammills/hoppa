@@ -13,7 +13,9 @@
   background: var(--ion-color-secondary);
 }
 
-ion-title {
+/* Typography */
+
+h1 {
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -25,4 +27,50 @@ ion-title {
   text-align: center;
   
   color: var(--ion-color-primary);
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+p {
+  font-style: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--ion-color-black);
+}
+
+a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.text-black {
+  color: var(--ion-color-black);
+}
+
+.text-primary {
+  color: var(--ion-color-primary);
+}
+
+.text-off-white {
+  color: var(--ion-color-off-white);
+}
+
+.text-pink {
+  color: var(--ion-color-pink);
 }
