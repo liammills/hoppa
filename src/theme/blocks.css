@@ -1,12 +1,16 @@
-#card {
+.card {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 18px;
-  padding: 3vw;
+  padding: 4vw;
   margin: 1vw 3vw;
 }
 
 .bg-off-white {
   background: var(--ion-color-off-white);
+}
+
+.bg-primary {
+  background: var(--ion-color-primary);
 }
 
 .bg-secondary {
@@ -41,6 +45,8 @@ h6 {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  margin-top: 6px;
+  margin-bottom: 0px;
 }
 
 p {
@@ -50,13 +56,19 @@ p {
   font-size: 10px;
   line-height: 12px;
   color: var(--ion-color-black);
+  margin: 0;
+}
+
+.semibold {
+  font-weight: 600;
 }
 
 a {
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: underline;
+  color: var(--ion-color-pink)
 }
 
 .text-black {

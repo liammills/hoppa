@@ -1,10 +1,10 @@
 <template>
-  <div
-    id="card"
-    class="bg-off-white"
-  >
-    <strong>{{ name }}</strong>
-    <span>Post</span>
+  <div class="card bg-off-white">
+    <h6 style="margin-bottom: 10px">{{ title }}</h6>
+    <p>{{ body }}</p>
+    <div v-if="type=='article'">
+      <a :href="link">Read more</a>
+    </div>
   </div>
 </template>
 
@@ -14,18 +14,15 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'PostCard',
   props: {
-    name: String,
+    type: String,
+    title: String,
+    link: String,
+    body: String,
     color: String,
   },
 });
 </script>
 
 <style scoped>
-#card {
-  background: var(--ion-color-off-white);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 18px;
-  padding: 3vw;
-  margin: 1vw 3vw;
-}
+
 </style>

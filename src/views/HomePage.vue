@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <h1>Home</h1>
+        <ion-title>Home</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -14,18 +14,19 @@
           />
         </ion-toolbar>
       </ion-header>
-
-      <PostCard name="hi" />
-
-      <ExploreContainer name="Home page" />
-
-      <h6>PLEASE work</h6>
-
-      <p>This WILL work</p>
-
-      <a>Read more</a>
-
-      <h2>This looks different</h2>
+      <div
+        style="margin-top: 15px"
+        v-for="post in posts"
+        :key="post.title"
+      >
+        <PostCard
+          :userName="post.userName"
+          :type="post.type"
+          :title="post.title"
+          :body="post.body"
+          :img="post.imgSrc"
+        />
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -46,6 +47,16 @@ export default defineComponent({
   data() {
     return {
       user_name: 'liam',
+      posts: [
+        {
+          type: 'article',
+          title: 'How to install a solar array on your home',
+          body: 'We’re facing an energy crisis. Demand for oil and gas is increasing, '
+          + 'outpacing supply. That, among other factors, has contributed to a sharp increase'
+          + 'in prices and has helped create a growing market for alternative-energy sources.',
+          imgSrc: '',
+        },
+      ],
     };
   },
 });
