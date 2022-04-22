@@ -12,6 +12,8 @@
         </ion-toolbar>
       </ion-header>
 
+      <PostCard name="hi" />
+
       <ExploreContainer name="Home page" />
     </ion-content>
   </ion-page>
@@ -22,12 +24,12 @@ import { defineComponent } from 'vue';
 import {
   IonPage, IonHeader, IonToolbar, IonTitle, IonContent,
 } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import PostCard from '@/components/PostCard.vue';
 
 export default defineComponent({
   name: 'HomePage',
   components: {
-    ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage,
+    IonHeader, IonToolbar, IonTitle, IonContent, IonPage, PostCard,
   },
 });
 </script>
