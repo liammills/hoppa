@@ -5,14 +5,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'ExploreContainer',
   props: {
-    name: String
-  }
+    name: String,
+  },
 });
 </script>
 
