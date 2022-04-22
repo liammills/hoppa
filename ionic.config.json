@@ -1,0 +1,8 @@
+{
+  "name": "Hoppa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "2f473c84"
+}
