@@ -1,5 +1,8 @@
 <template>
-  <div id="card">
+  <div
+    id="card"
+    class="bg-off-white"
+  >
     <strong>{{ name }}</strong>
     <span>Post</span>
   </div>

@@ -8,7 +8,10 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Home</ion-title>
+          <EmissionsSummary
+            :title="`hello, ${user_name}!`"
+            body="Here’s a quick overview of your emissions this month."
+          />
         </ion-toolbar>
       </ion-header>
 
@@ -24,12 +27,18 @@ import { defineComponent } from 'vue';
 import {
   IonPage, IonHeader, IonToolbar, IonTitle, IonContent,
 } from '@ionic/vue';
+import EmissionsSummary from '@/components/EmissionsSummary.vue';
 import PostCard from '@/components/PostCard.vue';
 
 export default defineComponent({
   name: 'HomePage',
   components: {
-    IonHeader, IonToolbar, IonTitle, IonContent, IonPage, PostCard,
+    IonHeader, IonToolbar, IonTitle, IonContent, IonPage, PostCard, EmissionsSummary,
+  },
+  data() {
+    return {
+      user_name: 'liam',
+    };
   },
 });
 </script>
