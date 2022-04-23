@@ -113,7 +113,7 @@ In your terminal, from the root directory:
 **Bangshuo Zhu** - University of Sydney </br>
 **Christina Liu** - University of Sydney </br>
 **Liam Mills** - University of Sydney</br>
-**Louise Zhang** - University of Technology Sydney</br>
+**Louise Zhang** - University of Sydney</br>
 
 ## License
 
