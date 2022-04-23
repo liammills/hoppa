@@ -107,6 +107,8 @@ Note:
 In your terminal, from the root directory:
 1. Run `npm install -g @ionic/cli cordova-res`.
 2. Run `cd hoppa && npm i && ionic build`.
+3. Run `ionic cap add android/ios`.
+4. Run `ionic cap run android/ios`.
 
 
 ## Authors
