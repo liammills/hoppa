@@ -6,9 +6,12 @@ Hop to net zero with Hoppa!
 
 1. [Whats's the Problem?](#what's-the-problem?)
 2. [Whats's the Solution?](#what's-the-solution?)
-2. [Business model](#business-model?)
-2. [Competitors](#competitors?)
-2. [Social impact](#social-impact)
+3. [Video](#video)
+4. [Repo Breakdown](#repo-breakdown)
+5. [Solution Architecture](#architectural-diagram)
+6. [Technology](#technology)
+7. [Getting started](#getting-started)
+8. [License](#license)
 
 ## What's the problem?
 
@@ -49,21 +52,69 @@ Aimed at uniting individuals within organisations, it takes a holistic approach 
 
 **Hoppa:** Well it gets more fun, you can even compete with your co-workers through leaderboards, organisational goals and regular updates on Slack on how your company is tracking with their carbon emission!
 
-## Solution architecture
-
-## Business model
+### Business model
 We want Hoppa to be self-sustaining - as such we our income channels are through brokerage fees for carbon off-setting purchasing and a freemium model. We’ll be targeting HR at management level positions, such as Eva, to integrate Hoppa into their organisation to improve their CSR and make a real difference.
 
 [show features that are free and those that are not]
 
-## Competitors
+### Competitors
 Hoppa differentiates to the market and its competitors by being both authentic and easy to use, allowing for organisations to improve their CSR in a genuine way. Through the building of communities, it encourages people to track their carbon emissions through small challenges and upload their personal progress with a wider network.
 
-## Social impact
+### Social impact
 We know that people are starting talk more about climate change, but we understand that it can be difficult and confusing when you’re doing it alone. 
 
 Hoppa makes it much more motivating to understand how the changes you make relate to those you colleagues are making, and how it all contributes to a larger end goal. This will hopefully empower more people to engage and make it less daunting to take the little actions that can help.
 
 So if we get more individuals to make small lifestyle changes, this can then lead to change from so many others and thus take a huge leap in the climate race.
 
-We as a Country have agreed to reach Net-Zero Carbon Emissions by 2050, therefore there is a onus on each and every one of us to take collective action. As such, we hope that by adopting Hoppa into their lifestyle, people like Eva will be better equipped to understand their carbon emissions and take the leap to hop to Net-Zero. 
+We as a Country have agreed to reach Net-Zero Carbon Emissions by 2050, therefore there is a onus on each and every one of us to take collective action. As such, we hope that by adopting Hoppa into their lifestyle, people like Eva will be better equipped to understand their carbon emissions and take the leap to hop to Net-Zero.
+
+## Video
+[ADD THUMBNAIL HERE](https://www.canva.com/design/DAE-p0ugoCA/uw7aS_UoHET4seBCL08kTQ/watch?utm_content=DAE-p0ugoCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+*hoppa - Codebrew 2022 Entry*
+
+## Architectural Diagram
+![architecture](https://user-images.githubusercontent.com/54311311/164878409-6b70d8fa-4bfd-4f7a-a1e0-eef5e884a5f8.png)
+
+
+Hoppa is run on a Node engine with a MongoDB database. Data is aggregated from various sources (external API's as well as mobile device data) and analysed through a Python data app on the backend.
+
+## Technology
+
+**Cars**
+- [Edmunds Vehicle API](https://developer.edmunds.com/api-documentation/vehicle/)
+
+**Javascript**
+- [Vue.js](https://vuejs.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Chart.js](https://www.chartjs.org/)
+
+## Getting started
+
+Use the following steps to get Hoppa up and running.
+
+### Prerequisite
+
+- Install [Node.js](https://nodejs.org/en/)
+- Clone the [repository](https://github.com/liammills/hoppa).
+- Install and configure [Android Studio](https://developer.android.com/studio) to emulate in Android
+
+Note:
+- To emulate in iOS, you must be on a macOS device with [XCode](https://developer.apple.com/xcode/) installed.
+
+### Run it
+
+In your terminal, from the root directory:
+1. Run `npm install -g @ionic/cli cordova-res`.
+2. Run `cd hoppa && npm i && ionic build`.
+
+
+## Authors
+**Bangshuo Zhu** - University of Sydney </br>
+**Christina Liu** - University of Sydney </br>
+**Liam Mills** - University of Sydney</br>
+**Louise Zhang** - University of Technology Sydney</br>
+
+## License
+
+This solution is made available under the [Apache 2 License](LICENSE).
