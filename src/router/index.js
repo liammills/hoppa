@@ -23,6 +23,10 @@ const routes = [
         component: () => import('@/views/LeapPage.vue'),
       },
       {
+        path: 'pay',
+        component: () => import('@/views/PaymentConfirmationPage.vue'),
+      },
+      {
         path: 'activity',
         component: () => import('@/views/ActivityPage.vue'),
       },

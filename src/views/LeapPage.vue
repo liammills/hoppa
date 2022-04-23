@@ -32,7 +32,7 @@
       </div>
 
       <div>
-        <BigButton>take the leap!</BigButton>
+        <BigButton @click="$router.push('pay')">take the leap!</BigButton>
       </div>
     </ion-content>
   </ion-page>
