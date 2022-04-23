@@ -33,6 +33,34 @@
           <h6>720kg</h6>
         </div>
       </div>
+      <div class="grid-row">
+        <div class="card bg-off-white grid-item l">
+          <ion-icon :icon="award" class="award" />
+          <h2 class="text-primary">April electric</h2>
+          <h6 class="text-primary">Save 2% on next electric bill</h6>
+          <SmallButton name="join" />
+        </div>
+        <div class="card bg-off-white grid-item">
+          <ion-icon :icon="award" class="award" />
+          <h2 class="text-primary">April water</h2>
+          <h6 class="text-primary">Save 2% on next water bill</h6>
+          <SmallButton name="join" />
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="card bg-off-white grid-item l">
+          <ion-icon :icon="award" class="award" />
+          <h2 class="text-primary">Vegan week</h2>
+          <h6 class="text-primary">Eat vegan for one week</h6>
+          <SmallButton name="join" />
+        </div>
+        <div class="card bg-off-white grid-item">
+          <ion-icon :icon="award" class="award" />
+          <h2 class="text-primary">Walk up April</h2>
+          <h6 class="text-primary">Walk 20 000 steps in a day</h6>
+          <SmallButton name="join" />
+        </div>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -42,15 +70,39 @@ import { defineComponent } from 'vue';
 import {
   IonPage, IonContent,
 } from '@ionic/vue';
+import SmallButton from '@/components/SmallButton.vue';
+import award from '../../resources/icons/award.svg';
 
 export default defineComponent({
   name: 'SquadPage',
   components: {
-    IonContent, IonPage,
+    IonContent, IonPage, SmallButton,
+  },
+  setup() {
+    return {
+      award,
+    };
   },
 });
 </script>
 
-<style scoped>
-
+<style>
+.l {
+  margin-right: 3vw;
+}
+.b {
+  margin-bottom: 3vw;
+}
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+.grid-item {
+  width: calc((100% - 6vw - 3vw)/2);
+  height: 230px;
+}
+.award {
+  width: 44px;
+  height: 61.72px;
+}
 </style>
