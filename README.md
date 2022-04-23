@@ -7,7 +7,6 @@ Hop to net zero with Hoppa!
 1. [Whats's the Problem?](#what's-the-problem?)
 2. [Whats's the Solution?](#what's-the-solution?)
 3. [Video](#video)
-4. [Repo Breakdown](#repo-breakdown)
 5. [Solution Architecture](#architectural-diagram)
 6. [Technology](#technology)
 7. [Getting started](#getting-started)
