@@ -1,6 +1,6 @@
 <template>
     <div class="carousel-div">
-        <img class="carousel-image" src="../../resources/icon.png">
+      <img class="carousel-image" src="../../resources/icon.png">
     </div>
 </template>
 

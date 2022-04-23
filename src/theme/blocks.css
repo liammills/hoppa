@@ -3,10 +3,11 @@
   border-radius: 18px;
   padding: 4vw;
   margin: 1vw 3vw;
+  background: #F2EEE9;
 }
 
 .bg-off-white {
-  background: var(--ion-color-off-white);
+  background: red;
 }
 
 .bg-primary {
@@ -85,4 +86,8 @@ a {
 
 .text-pink {
   color: var(--ion-color-pink);
+}
+
+ion-tab-button {
+  background: white;
 }

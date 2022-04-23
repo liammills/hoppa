@@ -6,11 +6,14 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <!-- <ion-header collapse="condense">
+      <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Leap to Net Zero</ion-title>
+          <EmissionsSummary
+            subtitle="your emissions"
+            title="1290kg"
+          />
         </ion-toolbar>
-      </ion-header> -->
+      </ion-header>
 
       <div class="carousel">
         <ion-slides pager="true" :options="slideOpts">
@@ -25,12 +28,6 @@
               <p>{{slide.description}}</p>
             </div>
           </ion-slide>
-          <!-- <ion-slide class="slide">
-            <h1>Slide 2</h1>
-          </ion-slide>
-          <ion-slide class="slide">
-            <h1>Slide 3</h1>
-          </ion-slide> -->
         </ion-slides>
       </div>
     </ion-content>
@@ -43,6 +40,7 @@ import {
   IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSlide, IonSlides,
 } from '@ionic/vue';
 import CarouselPicture from '@/components/CarouselPicture.vue';
+import EmissionsSummary from '@/components/EmissionsSummary.vue';
 
 export default defineComponent({
   name: 'LeapPage',
@@ -55,6 +53,7 @@ export default defineComponent({
     IonSlide,
     IonSlides,
     CarouselPicture,
+    EmissionsSummary,
   },
   data() {
     return {

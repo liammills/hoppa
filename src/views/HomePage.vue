@@ -9,13 +9,12 @@
       <ion-header collapse="condense">
         <ion-toolbar>
           <EmissionsSummary
-            :title="`hello, ${user_name}!`"
+            :title="`hello, ${userName}!`"
             body="Here’s a quick overview of your emissions this month."
           />
         </ion-toolbar>
       </ion-header>
       <div
-        style="margin-top: 15px"
         v-for="post in posts"
         :key="post.title"
       >
@@ -25,6 +24,12 @@
           :title="post.title"
           :body="post.body"
           :img="post.imgSrc"
+          :name="post.name"
+          :colors="post.colors"
+          :time="post.time"
+          :likes="post.likes"
+          :comments="post.comments"
+          :emissions="post.emissions"
         />
       </div>
     </ion-content>
@@ -46,14 +51,25 @@ export default defineComponent({
   },
   data() {
     return {
-      user_name: 'liam',
+      userName: 'liam',
       posts: [
+        {
+          name: 'Lydia Smith',
+          time: 'Today at 12:30pm',
+          colors: ['violet', '#FECCD8'],
+          title: 'Tram down to client lunch',
+          imgSrc: '',
+          likes: 5,
+          comments: 4,
+          emissions: 10,
+        },
         {
           type: 'article',
           title: 'How to install a solar array on your home',
           body: 'We’re facing an energy crisis. Demand for oil and gas is increasing, '
           + 'outpacing supply. That, among other factors, has contributed to a sharp increase'
           + 'in prices and has helped create a growing market for alternative-energy sources.',
+          link: '',
           imgSrc: '',
         },
       ],

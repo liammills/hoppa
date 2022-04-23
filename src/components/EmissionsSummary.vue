@@ -4,7 +4,7 @@
     <h1>{{title}}</h1>
     <h6 class="bottom-padding">{{body}}</h6>
   </div>
-  <div style="height: 18px;">
+  <div style="height: 40px;">
     <div class="card bg-primary move-up">
       <div class="col-1">
         <div class="full-width">
