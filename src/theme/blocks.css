@@ -7,7 +7,7 @@
 }
 
 .bg-off-white {
-  background: red;
+  background: var(--ion-color-off-white);
 }
 
 .bg-primary {
@@ -16,6 +16,12 @@
 
 .bg-secondary {
   background: var(--ion-color-secondary);
+}
+
+.spread {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 /* Typography */
@@ -80,12 +86,20 @@ a {
   color: var(--ion-color-primary);
 }
 
+.text-tertiary {
+  color: var(--ion-color-tertiary);
+}
+
 .text-off-white {
   color: var(--ion-color-off-white);
 }
 
 .text-pink {
   color: var(--ion-color-pink);
+}
+
+.text-center {
+  text-align: center;
 }
 
 ion-tab-button {
