@@ -18,13 +18,19 @@
     <h6 style="margin-bottom: 10px">{{ title }}</h6>
     <p>{{ body }}</p>
     <img
-      v-if="!imgSrc"
+      v-if="imgSrc === 'tram'"
       class="image"
       style="margin-bottom: 10px"
-      src="../../resources/icon.png"
+      src="../../resources/tram.jpeg"
+    >
+    <img
+      v-if="imgSrc === 'panels'"
+      class="image"
+      style="margin-bottom: 10px"
+      src="../../resources/panels.jpeg"
     >
     <div v-if="type=='article'">
-      <a :href="link">Read more</a>
+      <a href="https://solvoltaics.com/how-to-install-solar-panels/">Read more</a>
     </div>
     <div style="display: flex; justify-content: space-between; align-items: center">
       <div style="display: flex">
@@ -82,6 +88,7 @@ export default defineComponent({
     likes: Number,
     comments: Number,
     emissions: Number,
+    imgSrc: String,
   },
   components: {
     ProfilePicture,

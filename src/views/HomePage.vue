@@ -18,7 +18,7 @@
           :type="post.type"
           :title="post.title"
           :body="post.body"
-          :img="post.imgSrc"
+          :imgSrc="post.imgSrc"
           :name="post.name"
           :colors="post.colors"
           :time="post.time"
@@ -53,7 +53,7 @@ export default defineComponent({
           time: 'Today at 12:30pm',
           colors: ['violet', '#FECCD8'],
           title: 'Tram down to client lunch',
-          imgSrc: '',
+          imgSrc: 'tram',
           likes: 5,
           comments: 4,
           emissions: 10,
@@ -65,7 +65,7 @@ export default defineComponent({
           + 'outpacing supply. That, among other factors, has contributed to a sharp increase'
           + 'in prices and has helped create a growing market for alternative-energy sources.',
           link: '',
-          imgSrc: '',
+          imgSrc: 'panels',
         },
       ],
     };

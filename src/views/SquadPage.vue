@@ -13,7 +13,7 @@
         <h2>CO2 emitted</h2>
         <h6>38 members</h6>
       </div>
-      <div class="card text-pink bg-off-white text-center">
+      <div class="card text-pink bg-off-white text-center leader">
         <h2>leaderboard</h2>
       </div>
       <div class="card text-primary bg-off-white">
@@ -110,5 +110,8 @@ export default defineComponent({
 .cissa {
   width: 94px;
   height: 94px;
+}
+.leader {
+  margin-bottom: 3vw;
 }
 </style>
