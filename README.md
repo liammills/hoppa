@@ -70,12 +70,11 @@ So if we get more individuals to make small lifestyle changes, this can then lea
 We as a Country have agreed to reach Net-Zero Carbon Emissions by 2050, therefore there is a onus on each and every one of us to take collective action. As such, we hope that by adopting Hoppa into their lifestyle, people like Eva will be better equipped to understand their carbon emissions and take the leap to hop to Net-Zero.
 
 ## Video
-[ADD THUMBNAIL HERE](https://www.canva.com/design/DAE-p0ugoCA/uw7aS_UoHET4seBCL08kTQ/watch?utm_content=DAE-p0ugoCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[![278695497_390735432906995_2835999082292929770_n](https://user-images.githubusercontent.com/54311311/164878530-c494c5db-da06-4877-b649-bd796085d027.png)](https://www.canva.com/design/DAE-p0ugoCA/uw7aS_UoHET4seBCL08kTQ/watch?utm_content=DAE-p0ugoCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 *hoppa - Codebrew 2022 Entry*
 
 ## Architectural Diagram
 ![architecture](https://user-images.githubusercontent.com/54311311/164878409-6b70d8fa-4bfd-4f7a-a1e0-eef5e884a5f8.png)
-
 
 Hoppa is run on a Node engine with a MongoDB database. Data is aggregated from various sources (external API's as well as mobile device data) and analysed through a Python data app on the backend.
 
