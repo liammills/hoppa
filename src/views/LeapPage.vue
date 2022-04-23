@@ -1,10 +1,5 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Leap to Net Zero</ion-title>
-      </ion-toolbar>
-    </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
@@ -41,7 +36,7 @@
 <script>
 import { defineComponent } from 'vue';
 import {
-  IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSlide, IonSlides,
+  IonPage, IonHeader, IonToolbar, IonContent, IonSlide, IonSlides,
 } from '@ionic/vue';
 import CarouselPicture from '@/components/CarouselPicture.vue';
 import EmissionsSummary from '@/components/EmissionsSummary.vue';
@@ -52,7 +47,6 @@ export default defineComponent({
   components: {
     IonHeader,
     IonToolbar,
-    IonTitle,
     IonContent,
     IonPage,
     IonSlide,

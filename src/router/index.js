@@ -27,6 +27,10 @@ const routes = [
         component: () => import('@/views/PaymentConfirmationPage.vue'),
       },
       {
+        path: 'add-card',
+        component: () => import('@/views/AddCardPage.vue'),
+      },
+      {
         path: 'activity',
         component: () => import('@/views/ActivityPage.vue'),
       },

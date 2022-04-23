@@ -1,11 +1,18 @@
 <template>
-  <div class="card text-primary bg-secondary negative-bottom-margin">
-    <h4>{{subtitle}}</h4>
-    <h1>{{title}}</h1>
+  <div
+    v-if="subtitle || title || body"
+    class="card text-primary bg-secondary negative-bottom-margin"
+    style="padding-left: 5vw;"
+  >
+    <h2 style="margin-bottom: 0">{{subtitle}}</h2>
+    <h1 style="margin-top: 0">{{title}}</h1>
     <h6 class="bottom-padding">{{body}}</h6>
   </div>
-  <div style="height: 40px;">
-    <div class="card bg-primary move-up">
+  <div :style="(subtitle || title || body) ? 'height: 40px;' : 'margin-bottom: 30px'">
+    <div
+      class="card bg-primary"
+      :class="(subtitle || title || body) ? 'move-up' : ''"
+    >
       <div class="col-1">
         <div class="full-width">
           <ion-icon

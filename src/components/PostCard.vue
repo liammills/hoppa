@@ -40,10 +40,6 @@
             :icon="heartOutline"
             class="icon"
           />
-          <!-- <ion-icon
-            :icon="heart"
-            color="pink"
-          /> -->
         </div>
         <div v-if="comments">
           <p class="text-in-icon">{{comments}}</p>
@@ -51,9 +47,6 @@
             :icon="chatbubblesOutline"
             class="icon"
           />
-          <!-- <ion-icon
-            :icon="chatbubbles"
-          /> -->
         </div>
       </div>
       <h6 style="margin-top: 0" v-if="emissions">+ {{emissions}}kg</h6>

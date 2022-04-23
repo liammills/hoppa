@@ -1,6 +1,7 @@
 <template>
     <div
       class="circle"
+      :class="large ? 'large' : ''"
       :style="`background: linear-gradient(217deg, ${color1}, ${color2});`"
     />
 </template>
@@ -13,6 +14,7 @@ export default defineComponent({
   props: {
     color1: String,
     color2: String,
+    large: Boolean,
   },
 });
 </script>
@@ -23,5 +25,9 @@ export default defineComponent({
   width: 48px;
   border-radius: 50%;
   display: inline-block;
+}
+.large {
+  height: 109px;
+  width: 109px;
 }
 </style>

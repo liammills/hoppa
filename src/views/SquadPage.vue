@@ -18,7 +18,11 @@
       </div>
       <div class="card text-primary bg-off-white">
         <h5>Squad monthly progress</h5>
-        SPACE FOR CHART
+        <img
+          class="container"
+          style="width: 100%; margin: 15px 0 0 0;"
+          src="../../resources/chart-exemplar.svg"
+        >
         <h2>2120kg squad saved</h2>
         <div class="text-blue spread">
           <h6>Transport</h6>
@@ -101,7 +105,6 @@ export default defineComponent({
 }
 .grid-item {
   width: calc((100% - 6vw - 3vw)/2);
-  height: 230px;
 }
 .award {
   width: 44px;

@@ -22,6 +22,14 @@
   background: var(--ion-color-secondary);
 }
 
+.bg-pink {
+  background: var(--ion-color-pink);
+}
+
+.bg-tertiary {
+  background: var(--ion-color-tertiary);
+}
+
 .spread {
   display: flex;
   width: 100%;

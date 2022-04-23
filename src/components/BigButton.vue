@@ -1,5 +1,5 @@
 <template>
-    <div class="card button">
+    <div class="card big-button">
         <slot></slot>
     </div>
 </template>
@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <style>
-.button {
+.big-button {
   background-color: var(--ion-color-pink);
   border-radius: 18px;
   width: calc(100%-6vw);

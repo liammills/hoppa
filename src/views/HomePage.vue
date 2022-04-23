@@ -27,6 +27,9 @@
           :emissions="post.emissions"
         />
       </div>
+      <div class="circle bg-primary" style="position: fixed; bottom: 3vw; right: 4vw">
+        <h2 style="font-size: 50px" class="text-in-icon-plus text-off-white">+</h2>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -72,3 +75,18 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.circle {
+  min-height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.text-in-icon-plus {
+  position: absolute;
+  z-index: 3;
+  margin-left: 9px;
+  margin-top: 13px;
+}
+</style>

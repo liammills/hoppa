@@ -1,10 +1,5 @@
 <template>
   <ion-page>
-    <!-- <ion-header>
-      <ion-toolbar>
-        <ion-title>Payment Confirmation Page</ion-title>
-      </ion-toolbar>
-    </ion-header> -->
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar class="container">
@@ -18,7 +13,9 @@
           <div class="circle bg-primary">
             <h2 style="font-size: 50px" class="text-in-icon-minus text-off-white">-</h2>
           </div>
-          <h1 class="text-pink" style="margin: 0 15px">$<ion-input type="number" :value="amount"></ion-input></h1>
+          <h1 class="text-pink" style="margin: 0 15px">
+            $<ion-input type="number" :value="amount"></ion-input>
+          </h1>
           <div class="circle bg-primary">
             <h2 style="font-size: 50px" class="text-in-icon-plus text-off-white">+</h2>
           </div>
@@ -86,6 +83,7 @@ export default defineComponent({
 
 .heading {
   font-size: 36px;
+  margin-left: 3vw;
 }
 
 .horizontal {
