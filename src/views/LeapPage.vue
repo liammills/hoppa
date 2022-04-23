@@ -30,6 +30,10 @@
           </ion-slide>
         </ion-slides>
       </div>
+
+      <div>
+        <BigButton>take the leap!</BigButton>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -41,6 +45,7 @@ import {
 } from '@ionic/vue';
 import CarouselPicture from '@/components/CarouselPicture.vue';
 import EmissionsSummary from '@/components/EmissionsSummary.vue';
+import BigButton from '@/components/BigButton.vue';
 
 export default defineComponent({
   name: 'LeapPage',
@@ -54,10 +59,21 @@ export default defineComponent({
     IonSlides,
     CarouselPicture,
     EmissionsSummary,
+    BigButton,
   },
   data() {
     return {
       slides: [
+        {
+          title: 'Australian Forest Conservation',
+          description: 'Using satellite technology to monitor '
+          + 'and protect existing forests across Australia...',
+        },
+        {
+          title: 'Australian Forest Conservation',
+          description: 'Using satellite technology to monitor '
+          + 'and protect existing forests across Australia...',
+        },
         {
           title: 'Australian Forest Conservation',
           description: 'Using satellite technology to monitor '

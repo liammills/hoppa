@@ -1,6 +1,6 @@
 <template>
     <div class="carousel-div">
-      <img class="carousel-image" src="../../resources/icon.png">
+      <img class="carousel-image" src="../../resources/treepic.jpeg">
     </div>
 </template>
 
@@ -19,6 +19,7 @@ export default defineComponent({
   width: 200px !important;
   object-fit: cover;
   object-position: 50% 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .carousel-div {

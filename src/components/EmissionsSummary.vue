@@ -44,7 +44,7 @@ import car from '../../resources/icons/car-icon.svg';
 import energy from '../../resources/icons/energy-icon.svg';
 
 export default defineComponent({
-  name: 'EmissionSummary',
+  name: 'EmissionsSummary',
   props: {
     subtitle: String,
     title: String,
