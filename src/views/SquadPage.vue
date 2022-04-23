@@ -5,7 +5,7 @@
         class="card text-primary bg-secondary text-center"
         style="margin: 20px 3vw"
       >
-        <h6>PLACE FOR LOGO</h6>
+        <ion-icon :icon="cissa" class="cissa" />
         <h2>CISSA</h2>
       </div>
       <div class="card text-off-white bg-primary text-center" style="margin-bottom: 15px">
@@ -72,6 +72,7 @@ import {
 } from '@ionic/vue';
 import SmallButton from '@/components/SmallButton.vue';
 import award from '../../resources/icons/award.svg';
+import cissa from '../../resources/icons/cissa.svg';
 
 export default defineComponent({
   name: 'SquadPage',
@@ -81,6 +82,7 @@ export default defineComponent({
   setup() {
     return {
       award,
+      cissa,
     };
   },
 });
@@ -104,5 +106,9 @@ export default defineComponent({
 .award {
   width: 44px;
   height: 61.72px;
+}
+.cissa {
+  width: 94px;
+  height: 94px;
 }
 </style>
