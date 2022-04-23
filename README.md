@@ -82,10 +82,21 @@ Hoppa is run on a Node engine with a MongoDB database. Data is aggregated from v
 **Cars**
 - [Edmunds Vehicle API](https://developer.edmunds.com/api-documentation/vehicle/)
 
+**Google**
+ - [Google Maps](https://developers.google.com/maps)
+ - [Google Transit](https://developers.google.com/transit)
+
 **Javascript**
 - [Vue.js](https://vuejs.org/)
 - [Node.js](https://nodejs.org/en/)
 - [Chart.js](https://www.chartjs.org/)
+
+**Integrations**
+ - [Slack](https://api.slack.com/)
+ - etc.
+
+**Payments**
+ - [Stripe](https://stripe.com/)
 
 ## Getting started
 
